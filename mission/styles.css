@@ -1,27 +1,57 @@
 body {
     font-size: 20px;
     font-family: 'Times New Roman';
-    width: 100%;
     padding: 5%;
     margin: 5%;
     border: rgb(115, 115, 115) solid 1px;
-
 }
 
 h1, h2 {
     text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 h2 {
     color: #006EB6;
-    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 20px;
 }
 
-body {
-    line-height: 1.5;
+hr {
+    margin-top: 0;
+    color: gray;
+    max-width: 600px;
+    border: 0;
+    border-top: 1px solid gray;
+    margin-bottom: 2em;
 }
 
 img {
     width: 150px;
-    
+    margin: 1.5em auto;
+}
+
+footer {
+    text-align: center;
+}
+
+li {
+    list-style-type: decimal;
+    margin: 0.5em;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.italics {
+    font-style: italic;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.5;
 }
