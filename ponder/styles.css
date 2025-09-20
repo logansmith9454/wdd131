@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    border: gray 2px solid;
+    margin: 2em;
+    max-width: 800px;
+    padding: 2em;
+    background-color: lightgray;
+}
+
+* {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1em;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    color: rgb(96, 96, 252);
+    margin: 1em;
+}
+
+hr {
+    color: rgb(96, 96, 252);
+    width: 80%;
+    margin: 1em auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#topics, img {
+    max-width: 50%;
+}
+
+
+h2 {
+    font-size: 1.6em;
+    margin: 0.7em;
+}
