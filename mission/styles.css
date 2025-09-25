@@ -55,3 +55,12 @@ main {
 p {
     line-height: 1.5;
 }
+
+.dark {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+.dark h2 {
+    color: #A0D4ED;
+}
