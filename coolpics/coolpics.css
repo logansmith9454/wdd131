@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica, sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0.3em 0;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+}   
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 1em 4em;
+}
+
+button {
+    background-color: transparent;
+    color: var(--text-light);
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+
+a {
+    color: var(--text-light);
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+a:link {
+    color: var(--text-light)
+}
+
+/* a:visited {
+    color: var(--accent-color);
+} */
+
+h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+}
+
+figure {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 1em auto;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    a {
+        display: block;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
