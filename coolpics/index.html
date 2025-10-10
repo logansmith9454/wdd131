@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="coolpics.css">
-    <script src="coolpics.js"></script>
+    <script src="coolpics.js" defer></script>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
         <h1>Cool Pics 📷</h1>
         <nav>
             <button class="menu-button">Menu</button>
-            <a href="">Home</a>
-            <a href="">People</a>
-            <a href="">Places</a>
-            <a href="">About</a>
-            <a href="">Contacts</a>
+            <a href="#" class="hidden menu-item">Home</a>
+            <a href="#" class="hidden menu-item">People</a>
+            <a href="#" class="hidden menu-item">Places</a>
+            <a href="#" class="hidden menu-item">About</a>
+            <a href="#" class="hidden menu-item">Contacts</a>
         </nav>
     </header>
     <main>
@@ -56,6 +56,7 @@
         </section>
     </main>
     <footer>©2025 Not a real site :)</footer>
+    <dialog><img class="modal-image"><button class="close-viewer">X</button></dialog>
 </body>
 
 </html>
