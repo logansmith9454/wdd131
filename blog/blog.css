@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+ --body-font: Helvetica, Arial, sans-serif;
+ --head-font: Lora, Impact, serif;
+}
+
+
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    font-family: var(--body-font);
+}
+
+h1 {
+    text-align: center;
+    color: #473144;
+    font-family: var(--head-font);
+}
+
+nav {
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 2em;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1em 2em;
+    display: grid;
+}
+
+.article-info {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.article-info p {
+    padding: 0;
+    margin: 0.3em;
+    color: #473144;
+}
+
+.book-desc {
+    margin: 0 auto;
+}
+
+.book-title {
+    color: #AF1B3F;
+}
+
+.cover-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    border-top: 2px solid #EFC69B;
+    color: #473144;
+}
+
+
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .article-info {
+        padding: 1em 2em;
+        margin: 1em 2em;
+        border-right: 2px solid #EFC69B;
+    }
+}
