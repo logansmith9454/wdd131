@@ -1,0 +1,54 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main>
+        <section class="errors"></section>
+        <form id="checkoutForm" method="get" action="completed.html">
+            <p>
+                <label for="name">Full Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text" placeholder="Enter your email" required />
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address"></textarea>
+            </p>
+            <p>
+                <label for="payment">Payment Type:</label>
+                <select name="payment" id="payment">
+                    <option value="">Select Payment Method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </p>
+            <p class="hide" id="creditCardInfo">
+                <label for="creditCardNumber">Credit Card Number:</label>
+                <input id="creditCardNumber" name="creditCardNumber" type="text" placeholder="Enter 16 digits"
+                    pattern="[0-9]{16}" required />
+            </p>
+            <p class="hide" id="paypalInfo">
+                <label for="paypalName">Paypal Username:</label>
+                <input id="paypalName" name="paypalName" type="text" placeholder="Enter PayPal username" required />
+            </p>
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+</body>
+
+</html>
