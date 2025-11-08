@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A character card for your favorite character, Snortleblat">
+    <meta property="og:url" content="https://yourURLofPage.here">
+    <meta property="og:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put Page Title Here">
+    <meta name="twitter:description" content="Put Page Description Here">
+    <meta name="twitter:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="favicon-32x32.png">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Character Card</title>
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <img class="image" id="character-img" src="characterimg.webp" alt="pic of snortleblat">
+        <h1 class="name">Snortleblat</h1>
+        <div class="stats">
+            <p>Class: Swamp Beast Diplomat</p>
+            <p>Level: <span id="level">5</span></p>
+            <p>Health: <span id="health">100</span></p>
+        </div>
+        <div class="buttons">
+            <button id="attBtn">Attacked</button>
+            <button id="levelUpBtn">Level Up</button>
+        </div>
+    </div>
+</body>
+<dialog id="dead-modal">
+    <p>Character died.</p>
+    <button class="close-modal">OK</button>
+</dialog>
+
+</html>
