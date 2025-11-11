@@ -21,7 +21,8 @@ function displayModal(event) {
 	image = event.target.closest("img")
 	modalImage.src = image.src.split("-")[0] + "-full.jpeg"
 	console.log(modalImage.src)
-	modalImage.alt = "Larger image"
+	const newAlt = image.alt.split(" ")[0] + " large " + image.alt.split(" ")[2]
+	modalImage.alt = newAlt
 	modal.showModal()
 }
 
