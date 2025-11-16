@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Logan Smith">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="RecipeBook">
+    <meta name="description" content="A website for my favorite recipes">
+    <title>Recipe Book</title>
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A website for my favorite recipes">
+    <meta property="og:image" content="./images/sweet-potato-waffle-md.jpg">
+    <meta property="og:url" content="https://logansmith9454.github.io/wdd131/recipes/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="recipes.css">
+    <script src="main.js" defer></script>
+    <script type="module" src="recipes.mjs" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <img class="title-icon" src="images/recipe-book.png" alt="">
+            <h1 class="title">RecipeBook</h1>
+        </div>
+        <form class="search-form" action="">
+            <input id="recipeSearch" name="recipeSearch" type="text" placeholder="Find a recipe" required><button
+                type="submit" class="search-button"><img src="images/search.svg" alt="Search icon"></button>
+        </form>
+        <hr>
+    </header>
+    <main>
+        <div class="recipe-card">
+            <img class="recipe-image" src="./images/sweet-potato-waffle-md.jpg" alt="Image of sweet potato waffles">
+            <div class="recipe-info">
+                <div class="tags-cont">
+                    <div class="tag">Waffles</div>
+                    <div class="tag">Sweet Potato</div>
+                    <div class="tag">Side</div>
+                </div>
+                <h2>Sweet Potato Waffles</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    <p class="description hidden">Savory waffles made with Sweet potato with a hint of Ginger</p>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img class="icon" src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img class="icon" src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img class="icon" src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a class="flaticon-credit" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe
+            icons
+            created by Freepik -
+            Flaticon</a>
+    </footer>
+</body>
+
+</html>
