@@ -73,7 +73,7 @@ hr {
 
 img {
     max-width: 100%;
-    max-width: 300px;
+    width: 350px;
     aspect-ratio: auto;
     margin: 0 auto;
 }
@@ -104,6 +104,12 @@ h2 {
     width: 3em;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .recipe-card {
     display: flex;
     flex-direction: column;
@@ -116,7 +122,8 @@ h2 {
 }
 
 .recipe-info {
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto 0 0;
     width: 300px;
 }
 
@@ -158,6 +165,10 @@ footer {
 
     .recipe-info {
         width: auto;
+    }
+
+    img {
+        margin: 0;
     }
 }
 

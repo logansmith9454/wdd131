@@ -96,7 +96,6 @@ const listCopy = simpleList
 
 function searchList(list, query) {
 	function searchCallback(item) {
-		// console.log(item)
 		return (
 			item.name.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
 			item.description.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
