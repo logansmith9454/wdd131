@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="site-plan.css" />
+</head>
+
+<body>
+    <header>
+        <h1>EOLRb Site Plan</h1>
+        <h2>Logan Smith</h2>
+        <h2>WDD 131-4</h2>
+        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+    </header>
+    <main>
+        <!-- ------------------------Steps 2-3------------------------------ -->
+        <hr />
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>The purpose of this website is to help speedcubers (those who solve Rubik's cubes quickly) to find better
+            solutions to one step of the solve. This step, EOLRb, is somewhat advanced, but an optimal solution can
+            easily be computed.</p>
+        <!-- change this -->
+
+        <h3>Audience</h3>
+        <p>The target audience is those who use the Roux method for speedsolving, and are very fast with it (<12
+                seconds).</p>
+                <!-- change this -->
+
+                <h3>Dynamic elements</h3>
+                <p>I will use Javascript to calculate the optimal solution(s) for any cases that the user enters and
+                    display them. It will ask the user to pick their favorite and store it permanently. If they ask for
+                    a case they've already requested, it will give them their chosen solution.</p>
+                <!-- change this -->
+
+                <hr />
+                <h2>Branding</h2>
+                <h3>Website Logo</h3>
+                <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+                <img src="images/logo.png" alt="Logo image" />
+                <hr />
+                <h2>Style Guide</h2>
+
+                <!-- ------------------------Steps 4-8------------------------------ -->
+
+                <h3>Color Palette</h3>
+                <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+                <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+                Palette URL:
+                <a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
+                    target="_blank">https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a>
+
+                <table class="colors">
+                    <tbody>
+                        <tr>
+                            <th>Primary</th>
+                            <th>Secondary</th>
+                            <th>Accent 1</th>
+                            <th>Accent 2</th>
+                        </tr>
+                        <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+                        <tr>
+                            <td class="primary">[#F06543]</td>
+                            <td class="secondary">[#313638]</td>
+                            <td class="accent1">[#E0DFD5]</td>
+                            <td class="accent2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ------------------------Step 9------------------------------ -->
+
+                <h3>Typography</h3>
+                <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+                <h4>
+                    Heading Font: IM Fell French Canon SC
+                    <!-- change this -->
+                </h4>
+                <h4>
+                    Paragraph Font: Rubik (get it?)
+                    <!-- change this -->
+                </h4>
+                <h3>Normal paragraph example</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                </p>
+                <h3>Colored paragraph example</h3>
+                <p class="colored">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+
+                <!-- ------------------------Step 10------------------------------ -->
+
+                <h3>Navigation</h3>
+                <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Page2</a>
+                    <a href="#">Page3</a>
+                </nav>
+                <hr />
+
+                <h2>Content</h2>
+                <h3>Home page</h3>
+                <h4>Roux Method</h4>
+                <p>
+                    The Roux method is a 3x3 speedsolving method that has become increasingly popular in recent years.
+                    It is very
+                    efficient, uses less algorithms than other methods, and utilizes turns in the middle layer in a way
+                    that is very
+                    visually distinct.
+                </p>
+
+                <h4>LSE</h4>
+                <p>
+                    LSE stands for Last Six Edges, which is the last part of a Roux solve. There are several steps that
+                    it is
+                    traditionally broken down into, which are EO, LR, and L4E. As a speedcuber learns more advanced
+                    techniques, they
+                    can begin implementing more complicated techniques that help make transitions between steps smoother
+                    and take
+                    fewer moves to execute or even solve multiple of these steps at the same time.
+                </p>
+
+                <h4>EO</h4>
+                <p>
+                    EO, or edge orientation, does not solve any pieces, but instead it simplifies the case to something
+                    that is much
+                    easier to see and control. Each edge has one “sticker” that matches either the top or bottom side
+                    (in this case,
+                    either white or yellow). In EO, all the edges are flipped such that the matching sticker is on
+                    either the top or
+                    the bottom face. When this step is complete, the top side will all be white and yellow, and the
+                    bottom side will
+                    all be white and yellow. No white or yellow stickers will be on any other face. There are 9
+                    different cases,
+                    depending on how many edges are flipped on the top and on the bottom. These can be learned easily
+                    and quickly and
+                    take very few moves. There are also several ways to solve each case, so it is easy to do them from
+                    multiple angles
+                    and cancel moves to make the next step easier.
+                </p>
+
+                <h4>LR</h4>
+                <p>
+                    After EO is complete, the left and right faces are finished. Both the left and the right faces are
+                    typically
+                    missing one piece at this point in the solve. The missing pieces are called the LR edges (because
+                    they belong to
+                    the Left and Right faces, while all the other unsolved edges belong in the middle). A beginner would
+                    insert the
+                    two LR edges into the bottom of the cube and put them into the top together to solve everything
+                    except the middle
+                    layer of the cube. In more advanced steps, this process is simplified or completely merged with EO.
+                </p>
+
+                <h4>L4E</h4>
+                <p>
+                    L4E stands for Last 4 Edges. At this point in the solve the remaining 4 edges can easily be solved
+                    with a few
+                    simple patterns, resulting in a solved cube. We won’t get into the details here, as this page
+                    focuses on the EO
+                    and LR steps, specifically combining the two.
+                </p>
+
+                <h4>EOLR</h4>
+                <p>
+                    EOLR is the process of performing EO while simultaneously inserting the LR edges into the bottom
+                    layer of the cube
+                    so that they can be inserted easily and without pausing. It is done by executing a specific EO case
+                    that will make
+                    it possible to end with the LR edges on the bottom. Sometimes these cases take more moves than the
+                    regular EO, but
+                    it saves moves by eliminating half of the LR step. This is a moderately complicated step and should
+                    only be
+                    learned after one is competent at EO.
+                </p>
+
+                <h4>EOLRb</h4>
+                <p>
+                    EOLRb is similar to EOLR, but instead of inserting the LR edges into the bottom of the cube, a
+                    specific EOLR case
+                    is used to solve the LR edges directly. Again, this step is less efficient than EOLR, and much less
+                    efficient than
+                    EO, but it skips the LR step entirely, so it requires less moves overall and can be executed faster.
+                    This is a
+                    very advanced step to use, and very few people in the world know every case and use them
+                    effectively. It is very
+                    complicated to use and should only be learned after one is competent with EOLR.
+                </p>
+                <h4>Images for the Home page</h4>
+                <img src="images/eo_solved.png" alt="Cube with EO solved">
+                <img src="images/l4e.png" alt="Cube with LR solved">
+
+
+                <h3>[Page 2]</h3>
+                <p>Enter your case here. Use the following format: [format that I'll settle on]</p>
+                <p>Solutions found:</p>
+                <p>Solution 1</p>
+                <p>Solution 2</p>
+                <p>Solution 3</p>
+                <p>Pick your solution: (enter int)</p>
+                <h2>Wireframes</h2>
+                <p>
+                    Create two wireframes for your site. One for each page and list them
+                    here
+                </p>
+
+                <h3>Home</h3>
+                <p>
+                    This is the info about how the Rubik's cube technical steps work, for those who are curious.
+                </p>
+                <img src="images/eolrb-wireframe-1.png" alt="home page wireframe" />
+
+                <h3>[Page 2]</h3>
+                <p>
+                    This page asks the user for their case, and either shows the case they already generated or computes
+                    all optimal solutions and asks them to pick their favorite to store.
+                </p>
+                <img src="images/eolrb-wireframe-2.png" alt="page 2 wireframe" />
+    </main>
+</body>
+
+</html>
