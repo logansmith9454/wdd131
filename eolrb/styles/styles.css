@@ -115,6 +115,11 @@ footer {
   align-items: center;
 }
 
+.site-plan-link {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
 label {
   font-size: 2em;
   display: block;
