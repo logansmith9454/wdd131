@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOLRb</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/eolrb.js" type="module" defer></script>
+    <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img src="images/logo.png" alt="EOLRb logo" class="logo-img">
+        </a>
+        <div class="nav-container">
+            <h1 class="page-title">EOLRb Solver</h1>
+            <nav>
+                <a href="index.html">Info</a>
+                <a class="current-tab" href="solver.html">Solver</a>
+            </nav>
+        </div>
+    </header>
+    <main class="solver-main">
+        <form class="case-form" action="">
+            <label for="enterCase">Enter your EOLRb case:</label>
+            <input id="enterCase" name="enterCase" type="text" placeholder="e.g. 152100111" required>
+            <button type="submit" class="case-button solve-button">Solve</button>
+            <p class="error-message"></p>
+        </form>
+        <ol class="solution-list">
+        </ol>
+        <form class="solution-form hidden" action="">
+            <label for="chooseSolution">Choose your solution:</label>
+            <input id="chooseSolution" name="chooseSolution" type="text" placeholder="Enter chosen solution" required>
+            <button type="submit" class="case-button">Store</button>
+        </form>
+        <!-- <img src="images/l4e.png" alt="generic case"> -->
+    </main>
+    <footer>
+        <h2>Logan Smith</h2>
+        <a class="site-plan-link" href="site-plan.html">EOLRb site plan</a>
+    </footer>
+
+</body>

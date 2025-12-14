@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOLRb</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img src="images/logo.png" alt="EOLRb logo" class="logo-img">
+        </a>
+        <div class="nav-container">
+            <h1 class="page-title">EOLRb Solver</h1>
+            <nav>
+                <a class="current-tab" href="index.html">Info</a>
+                <a href="solver.html">Solver</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="home-content">
+            <div class="text-image-container">
+                <div class="home-text">
+                    <h2>Roux Method</h2>
+                    <p>
+                        The Roux method is a 3x3 speedsolving method that has become
+                        increasingly popular in recent years. It is very efficient, uses
+                        less algorithms than other competition-viable methods, and
+                        utilizes turns in the middle layer in a way that is very visually
+                        distinct.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container">
+                <img class="demo-image" src="images/home-lse.png" alt="lse case">
+                <div class="home-text">
+                    <h2>LSE</h2>
+                    <p>
+                        LSE stands for Last Six Edges, which is the last part of a Roux
+                        solve. There are several steps that it is traditionally broken
+                        down into, which are EO, LR, and L4E. As a speedcuber learns more
+                        advanced LSE, they can begin implementing more complicated
+                        techniques that help make transitions between steps smoother and
+                        take fewer moves to execute, or even solve multiple of these steps
+                        at the same time.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container image-right">
+                <img class="demo-image" src="images/eo_solved.png" alt="Completed EO">
+                <div class="home-text">
+                    <h2>EO</h2>
+                    <p>
+                        EO, or edge orientation, does not solve any pieces, but instead it
+                        simplifies the case to something that is much easier to see and
+                        control. Each edge piece has one “sticker” that matches either the
+                        top or bottom side (in this case, either white or yellow). In EO,
+                        all the edges are flipped such that the matching sticker is on
+                        either the top or the bottom face. When this step is complete, the
+                        top side will all be white and yellow, and the bottom side will
+                        all be white and yellow. No white or yellow stickers will be on
+                        any other face. There are 9 different cases, depending on how many
+                        edges are flipped on the top and on the bottom. These can be
+                        learned easily and quickly and take very few moves. There are also
+                        several ways to solve each case, so it is easy to do them from
+                        multiple angles and cancel moves to make the next step easier.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container">
+                <img class="demo-image" src="images/home-lr.png" alt="lr case">
+                <div class="home-text">
+                    <h2>LR</h2>
+                    <p>
+                        After EO is complete, the next step is to solve the left and right
+                        faces. Both the left and the right faces are typically missing one
+                        piece at this point in the solve. The missing pieces are called
+                        the LR edges (because they belong to the Left and Right faces,
+                        while all the other unsolved pieces belong in the middle). A
+                        beginner would insert the two LR edges into the bottom of the cube
+                        and put them into the top together to solve everything except the
+                        middle layer of the cube. In more advanced steps, this process is
+                        simplified or completely merged with EO.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container image-right">
+                <img class="demo-image" src="images/l4e.png" alt="L4E case">
+                <div class="home-text">
+                    <h2>L4E</h2>
+                    <p>
+                        L4E stands for Last 4 Edges. At this point in the solve the
+                        remaining 4 edges can easily be solved with a few simple patterns,
+                        resulting in a solved cube. We won’t get into the details here, as
+                        this page focuses on the EO and LR steps, specifically combining
+                        the two.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container">
+                <div class="home-text">
+                    <h2>EOLR</h2>
+                    <p>
+                        EOLR is the process of performing EO while simultaneously
+                        inserting the LR edges into the bottom layer of the cube so that
+                        they can be inserted easily and without pausing. It is done by
+                        executing a specific EO case that will make it possible to end
+                        with the LR edges on the bottom. Sometimes these cases take more
+                        moves than the regular EO, but it saves moves by eliminating half
+                        of the LR step. This is a moderately complicated step and should
+                        only be learned after being competent at EO.
+                    </p>
+                </div>
+            </div>
+            <div class="text-image-container">
+                <div class="home-text">
+                    <h2>EOLRb</h2>
+                    <p>
+                        EOLRb is similar to EOLR, but instead of inserting the LR edges
+                        into the bottom of the cube, a specific EOLR case is used to solve
+                        the LR edges directly. Again, this step is less efficient than
+                        EOLR, and much less efficient than EO, but it skips the LR step
+                        entirely, so it requires less moves overall and can be executed
+                        faster. This is a very advanced step to use, and very few people
+                        in the world know every case and use them effectively. It is
+                        complicated to use and should only be learned after one is
+                        competent with EOLR.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Logan Smith</h2>
+        <a class="site-plan-link" href="site-plan.html">EOLRb site plan</a>
+    </footer>
+</body>
+
+</html>
