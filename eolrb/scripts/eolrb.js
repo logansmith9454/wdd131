@@ -48,6 +48,6 @@ export function displaySolution(solutionMoves) {
 		//     console.log($"Solution: {solution}, {solution == " "}");
 		// }
 	}
-	const solutionFormEl = document.querySelector(".solution-form")
-	solutionFormEl.classList.remove("hidden")
+	// const solutionFormEl = document.querySelector(".solution-form")
+	// solutionFormEl.classList.remove("hidden")
 }
