@@ -43,9 +43,12 @@ header {
 
 .logo-link {
   padding: 5px;
+  min-width: 130px;
+  max-width: 20%;
 }
 
 .logo-img {
+  width: 100%;
   max-width: 200px;
   border: 2px solid var(--secondary-color);
 }
@@ -62,7 +65,7 @@ header {
 
 .page-title {
   margin: auto;
-  font-size: 2.25em;
+  font-size: 1.8em;
 }
 
 nav {
@@ -74,8 +77,8 @@ nav a {
   text-decoration: none;
   color: var(--text-dark);
   background-color: var(--primary-color);
-  padding: 0.5em 2em;
-  font-size: 1.5em;
+  padding: 0.3em 1em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
