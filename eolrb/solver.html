@@ -33,27 +33,38 @@
         </div>
     </header>
     <main class="solver-main">
-        <p class="tutorial-paragraph">To enter your case, enter a 9-digit number. The first digit is whether or not the
-            centers are oriented (1 if
-            they are, 0 if not). The next 2 digits represent the locations of the L and R edges, respectively. The
-            locations are represented by the numbers 1-6, being the locations of the letters A, B, C, D, U, and W, in
-            that order. The remaining 6 digihts are the orientations of those same 6 pieces, in the same order (again, 1
-            for oriented, 0 for misoriented). Remember that for a case to be possible, there must be an even number of
-            oriented edges (the last 6 digits must add to an even number).</p>
-        <form class="case-form" action="">
-            <label for="enterCase">Enter your EOLRb case:</label>
-            <input id="enterCase" name="enterCase" type="text" placeholder="e.g. 152100111" required>
-            <button type="submit" class="case-button solve-button">Solve</button>
-            <p class="error-message"></p>
-        </form>
-        <ol class="solution-list">
-        </ol>
-        <form class="solution-form hidden" action="">
-            <label for="chooseSolution">Choose your solution:</label>
-            <input id="chooseSolution" name="chooseSolution" type="text" placeholder="Enter chosen solution" required>
-            <button type="submit" class="case-button">Store</button>
-        </form>
-        <!-- <img src="images/l4e.png" alt="generic case"> -->
+        <div class="solver">
+            <button class="accordion">
+                <h3>Tutorial</h3>
+                <h3 class="tutorial-status">+</h3>
+            </button>
+            <div class="tutorial-panel">
+                <p class="tutorial-paragraph">To enter your case, enter a 9-digit number. The first digit is whether or
+                    not the centers are oriented (1 if they are, 0 if not). The next 2 digits represent the locations of
+                    the L and R edges, respectively. The locations are represented by the numbers 1-6, being the
+                    locations of the letters A, B, C, D, U, and W, in that order. The remaining 6 digits are the
+                    orientations of those same 6 pieces, in the same order (again, 1 for oriented, 0 for misoriented).
+                    Remember that for a case to be possible, there must be an even number of oriented edges (the last 6
+                    digits must add to an even number).</p>
+            </div>
+            <form class="case-form" action="">
+                <label for="enterCase">Enter your EOLRb case:</label>
+                <input id="enterCase" name="enterCase" type="text" placeholder="e.g. 152100111" required>
+                <button type="submit" class="case-button solve-button">Solve</button>
+                <p class="error-message"></p>
+            </form>
+            <ol class="solution-list">
+            </ol>
+            <form class="solution-form hidden" action="">
+                <label for="chooseSolution">Choose your solution:</label>
+                <input id="chooseSolution" name="chooseSolution" type="text" placeholder="Enter chosen solution"
+                    required>
+                <button type="submit" class="case-button">Store</button>
+            </form>
+        </div>
+        <div class="known-cases">
+            <h3>Known cases:</h3>
+        </div>
     </main>
     <footer>
         <h2>Logan Smith</h2>

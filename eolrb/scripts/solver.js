@@ -37,6 +37,12 @@ function validateCase(cubeCase) {
 			displayError("Invalid input. Your case has edge parity.")
 			return false
 		}
+		if (cubeCase[1] == cubeCase[2]) {
+			displayError(
+				"Invalid input. The second and third digits should be different values."
+			)
+			return false
+		}
 		return true
 	}
 	if (cubeCase.length != 9) {

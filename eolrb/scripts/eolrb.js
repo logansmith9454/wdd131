@@ -1,5 +1,20 @@
 import { Main } from "./solver.js"
 
+const acc = document.querySelector(".accordion")
+const accStatus = document.querySelector(".tutorial-status")
+
+acc.addEventListener("click", function () {
+	this.classList.toggle("active")
+	var panel = this.nextElementSibling
+	if (panel.style.maxHeight) {
+		panel.style.maxHeight = null
+		accStatus.innerText = "+"
+	} else {
+		panel.style.maxHeight = panel.scrollHeight + "px"
+		accStatus.innerText = "-"
+	}
+})
+
 export function displayError(error) {
 	const errorEl = document.querySelector(".error-message")
 	errorEl.innerText = error
@@ -48,6 +63,6 @@ export function displaySolution(solutionMoves) {
 		//     console.log($"Solution: {solution}, {solution == " "}");
 		// }
 	}
-	// const solutionFormEl = document.querySelector(".solution-form")
-	// solutionFormEl.classList.remove("hidden")
+	const solutionFormEl = document.querySelector(".solution-form")
+	solutionFormEl.classList.remove("hidden")
 }
