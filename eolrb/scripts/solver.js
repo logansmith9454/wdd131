@@ -1,10 +1,10 @@
 import { Cube } from "./cube.js"
-import { displayError } from "./eolrb.js"
-import { Corners } from "./corners.js"
-import { Centers } from "./centers.js"
-import { Ori } from "./ori.js"
-import { Lr } from "./lr.js"
-import { displaySolution } from "./eolrb.js"
+import { displayError, displaySolution } from "./eolrb.js"
+// import { Corners } from "./corners.js"
+// import { Centers } from "./centers.js"
+// import { Ori } from "./ori.js"
+// import { Lr } from "./lr.js"
+// import { displaySolution } from "./eolrb.js"
 
 export function Main(e) {
 	e.preventDefault()
@@ -39,7 +39,7 @@ function validateCase(cubeCase) {
 		}
 		if (cubeCase[1] == cubeCase[2]) {
 			displayError(
-				"Invalid input. The second and third digits should be different values."
+				"Invalid input. The second and third digits should be different values.",
 			)
 			return false
 		}
@@ -55,7 +55,7 @@ function validateCase(cubeCase) {
 		displayError("Invalid input. Please enter either 1-6 for the third value.")
 	} else if (!/^[01]$/.test(cubeCase[3])) {
 		displayError(
-			"Invalid input. Please enter either 0 or 1 for the fourth value."
+			"Invalid input. Please enter either 0 or 1 for the fourth value.",
 		)
 	} else if (!/^[01]$/.test(cubeCase[4])) {
 		displayError("Invalid input. Please enter either 0 or 1 for the fifth value.")
@@ -63,11 +63,11 @@ function validateCase(cubeCase) {
 		displayError("Invalid input. Please enter either 0 or 1 for the sixth value.")
 	} else if (!/^[01]$/.test(cubeCase[6])) {
 		displayError(
-			"Invalid input. Please enter either 0 or 1 for the seventh value."
+			"Invalid input. Please enter either 0 or 1 for the seventh value.",
 		)
 	} else if (!/^[01]$/.test(cubeCase[7])) {
 		displayError(
-			"Invalid input. Please enter either 0 or 1 for the eighth value."
+			"Invalid input. Please enter either 0 or 1 for the eighth value.",
 		)
 	} else if (!/^[01]$/.test(cubeCase[8])) {
 		displayError("Invalid input. Please enter either 0 or 1 for the ninth value.")
@@ -77,7 +77,7 @@ function validateCase(cubeCase) {
 	return false
 }
 
-function getScrambledCube(cubeCase) {
+export function getScrambledCube(cubeCase) {
 	let cornerInt = 0
 	let centerInt = parseInt(cubeCase[0])
 	let lrbInt = parseInt(cubeCase[1]) - 1
@@ -113,13 +113,13 @@ function getScrambledCube(cubeCase) {
 		remainingLocs[2],
 		remainingOris[2],
 		remainingLocs[3],
-		remainingOris[3]
+		remainingOris[3],
 	)
 	// scrambledCube.displayCube()
 	return scrambledCube
 }
 
-function solve(scrambledCube) {
+export function solve(scrambledCube) {
 	let solutionMoves = []
 
 	const solvedCube = new Cube(
@@ -136,12 +136,12 @@ function solve(scrambledCube) {
 		"u",
 		1,
 		"w",
-		1
+		1,
 	)
 
 	console.log(
 		"Solved cube initial state:",
-		JSON.stringify(solvedCube.cubeToTuple())
+		JSON.stringify(solvedCube.cubeToTuple()),
 	)
 
 	// Now test M move
@@ -194,19 +194,19 @@ function solve(scrambledCube) {
 	let u2CubeScram = scrambledCube.clone()
 	u2CubeScram.u2()
 	scrambledSide[0][JSON.stringify(u2CubeScram.cubeToTuple())] = "(U2)"
-	console.log(
-		`Scrambled side layer 0 has ${Object.keys(scrambledSide[0]).length} states`
-	)
-	console.log(
-		`Solved side layer 0 has ${Object.keys(solvedSide[0]).length} states`
-	)
+	// console.log(
+	// 	`Scrambled side layer 0 has ${Object.keys(scrambledSide[0]).length} states`,
+	// )
+	// console.log(
+	// 	`Solved side layer 0 has ${Object.keys(solvedSide[0]).length} states`,
+	// )
 
 	if (JSON.stringify(scrambledTuple) === JSON.stringify(solvedTuple)) {
 		return ["None"]
 	}
 
 	for (let layer = 0; layer < 15; layer++) {
-		console.log(`searching layer ${layer}`)
+		// console.log(`searching layer ${layer}`)
 		scrambledSide[layer + 1] = {}
 
 		Object.keys(scrambledSide[layer]).forEach((tupleKey) => {
@@ -238,7 +238,7 @@ function solve(scrambledCube) {
 					"  State:",
 					key.substring(0, 50) + "...",
 					"Moves:",
-					solvedSide[1][key]
+					solvedSide[1][key],
 				)
 			})
 		}
@@ -340,7 +340,7 @@ function tupleToCube(tupledCube) {
 		remainingLocs[2],
 		oriOrientations[2],
 		remainingLocs[3],
-		oriOrientations[3]
+		oriOrientations[3],
 	)
 	return newCube
 }

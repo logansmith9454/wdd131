@@ -41,6 +41,31 @@ body {
   flex-direction: column;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* max-width: 600px; */
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: scroll;
+}
+
+
+th, td {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
 h3 {
   padding: 0 1em;
   font-weight: bold;
