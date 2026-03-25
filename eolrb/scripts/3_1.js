@@ -3,8 +3,8 @@ import { getScrambledCube, solve } from "./solver.js"
 const caseTable = document.querySelector(".solution-table")
 
 var lr_positions = ["1", "2", "3", "4", "5", "6"]
-var top_flips = ["0111", "1011", "1101", "1110"]
-var bottom_flips = ["10", "01"]
+var top_flips = ["1000", "0100", "0010", "0001"]
+var bottom_flips = ["01", "10"]
 
 // var lr_positions = ["1", "2", "3"]
 // var top_flips = ["1000"]
@@ -23,7 +23,7 @@ lr_positions.forEach((lr1_position) => {
 					table_html += `<tr><th>${eolrb_case_display}</th>`
 					let scrambledCube = getScrambledCube(eolrb_case)
 					let solutionMoves = solve(scrambledCube)
-					console.log(solutionMoves)
+					// console.log(solutionMoves)
 					solutionMoves.forEach((solution) => {
 						table_html += `<th>${solution}</th>`
 					})

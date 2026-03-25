@@ -18,7 +18,9 @@ lr_positions.forEach((lr1_position) => {
 			bottom_flips.forEach((bottom_flip) => {
 				if (lr1_position != lr2_position) {
 					var eolrb_case = "1" + lr1_position + lr2_position + top_flip + bottom_flip
-					table_html += `<tr><th>${eolrb_case}</th>`
+					var eolrb_case_display =
+						lr1_position + lr2_position + "-" + top_flip + "-" + bottom_flip
+					table_html += `<tr><th>${eolrb_case_display}</th>`
 					let scrambledCube = getScrambledCube(eolrb_case)
 					let solutionMoves = solve(scrambledCube)
 					console.log(solutionMoves)
