@@ -3,8 +3,8 @@ import { getScrambledCube, solve } from "./solver.js"
 const caseTable = document.querySelector(".solution-table")
 
 var lr_positions = ["1", "2", "3", "4", "5", "6"]
-var top_flips = ["1100", "0110", "0011", "1001"]
-var bottom_flips = ["11"]
+var top_flips = ["1111"]
+var bottom_flips = ["00"]
 
 // var lr_positions = ["1", "2", "3"]
 // var top_flips = ["1000"]
