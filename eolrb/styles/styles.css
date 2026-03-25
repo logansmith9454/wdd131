@@ -62,8 +62,8 @@ th, td {
 th {
   background: #4CAF50;
   color: white;
-  width: 100px;
-  min-width: 250px;
+  width: 150px;
+  min-width: 300px;
 }
 
 tr:nth-child(even) {
